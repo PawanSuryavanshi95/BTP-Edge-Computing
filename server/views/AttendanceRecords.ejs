@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+    <!--===============================================================================================-->	
+        <link rel="icon" type="image/png" href="/assets/images/icons/favicon.ico"/>
+    <!--===============================================================================================-->
+        <link rel="stylesheet" type="text/css" href="/assets/vendor/bootstrap/css/bootstrap.min.css">
+    <!--===============================================================================================-->
+        <link rel="stylesheet" type="text/css" href="/assets/fonts/font-awesome-4.7.0/css/font-awesome.min.css">
+    <!--===============================================================================================-->
+        <link rel="stylesheet" type="text/css" href="/assets/vendor/animate/animate.css">
+    <!--===============================================================================================-->
+        <link rel="stylesheet" type="text/css" href="/assets/vendor/select2/select2.min.css">
+    <!--===============================================================================================-->
+        <link rel="stylesheet" type="text/css" href="/assets/vendor/perfect-scrollbar/perfect-scrollbar.css">
+    <!--===============================================================================================-->
+        <link rel="stylesheet" type="text/css" href="/assets/css/util.css">
+        <link rel="stylesheet" type="text/css" href="/assets/css/main.css">
+    <!--===============================================================================================-->
+    <title>Attendance Records</title>
+</head>
+<body>
+    <div class="limiter">
+		<div class="container-table100">
+			<div class="wrap-table100">
+                <h1 style="text-align: center; padding-bottom: 20px; font-size: 40px;">Attendance Records</h1>
+    <div class="table-container">
+
+        <% for(var i=0; i < data.length; i++) { %>
+            <p>
+            <b><%= data[i].date %></b> <br/>
+            <% for(var j=0; j < data[i].students.length; j++) { %>
+                <%= data[i].students[j] %>
+            <% } %>
+            </p>
+        <% } %>
+        
+    </div>
+</div>
+</div>
+</div>
+
+    <!--===============================================================================================-->	
+	<script src="/assets/vendor/jquery/jquery-3.2.1.min.js"></script>
+    <!--===============================================================================================-->
+        <script src="/assets/vendor/bootstrap/js/popper.js"></script>
+        <script src="/assets/vendor/bootstrap/js/bootstrap.min.js"></script>
+    <!--===============================================================================================-->
+        <script src="/assets/vendor/select2/select2.min.js"></script>
+    <!--===============================================================================================-->
+        <script src="/assets/js/main.js"></script>
+
+</body>
+</html>
